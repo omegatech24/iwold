@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const clienteRouter = require('./routers/clienteRouter');
 const app = express();
+const loginRouter = require('./routers/loginRouter');
 
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
@@ -16,6 +17,6 @@ app.use(cors({
     maxAge: 600
 }));
 
-app.use(clienteRouter);
+app.use(clienteRouter, loginRouter);
 
 module.exports = app;
