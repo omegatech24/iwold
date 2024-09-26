@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="css/styleredefinir.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-reset">
+        <div class="reset-box">
+            <h2>Redefinir Senha</h2>
+            <p>Por favor, insira sua nova senha abaixo.</p>
+            <form action="#">
+                <!-- Campo para E-mail -->
+                <label for="email">
+                    <i class="fas fa-envelope"></i> <!-- Ícone de e-mail -->
+                    Insira seu e-mail:
+                    <input type="email" id="email" placeholder="E-mail">
+                </label>
+
+                <!-- Campo para Nova Senha -->
+                <label for="new-password">
+                    <i class="fas fa-lock"></i> <!-- Ícone de senha -->
+                    Nova Senha:
+                    <input type="password" id="new-password" placeholder="Nova Senha">
+                </label>
+
+                <!-- Campo para Confirmar Senha -->
+                <label for="confirm-password">
+                    <i class="fas fa-lock"></i> <!-- Ícone de confirmação de senha -->
+                    Confirmar Senha:
+                    <input type="password" id="confirm-password" placeholder="Confirmar Senha">
+                </label>
+
+                <button type="submit" class="btn-reset">Redefinir Senha</button>
+            </form>
+            <!-- Botão de Retorno para a Página de Login -->
+            <a href="login.html" class="btn-back">Voltar para Login</a>   
+        </div>
+    </div>
+</body>
+</html>

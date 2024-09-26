@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo iWallet | iWallet</title>
+    <link rel="stylesheet" href="css/styleadicionarsaldo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Adicionando a logo -->
+        <img src="img/logo.iwallet.jpg" alt="Logo" class="logo">
+
+        <h1>Planejamento Financeiro</h1>
+        
+        <div class="saldo-container">
+           
+
+            <div class="saldo-item">
+                <label for="valor">Adicionar Saldo</label>
+                <input type="number" id="valor" placeholder="Digite o valor">
+            </div>
+
+            <div class="saldo-item">
+                <label for="tipo-saldo">Especificar Tipo de Saldo</label>
+                <select id="tipo-saldo">
+                    <option value="salario">SALÁRIO</option>
+                    <option value="pix">PIX</option>
+                    <option value="mesada">MESADA</option>
+                    <option value="vale-alimentacao">VALE-ALIMENTAÇÃO</option>
+                    <option value="plano-saude">PLANO DE SAÚDE</option>
+                    <option value="vale-refeicao">VALE-REFEIÇÃO</option>
+                    <option value="vale-academia">VALE-ACADEMIA</option>
+                    <option value="vale-cultura">VALE-CULTURA</option>
+                    <option value="vale-cultura">Outro...</option>
+                </select>
+            </div>
+            <h2>Saldo Total</h2>
+            <p id="saldo-total">Saldo: R$ 0.00</p>
+
+            <button onclick="adicionarSaldo()">Adicionar Saldo</button>
+        </div>
+        <p>.</p>
+        <a href="paginasaldo.html" class="btn-back">Voltar</a>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
